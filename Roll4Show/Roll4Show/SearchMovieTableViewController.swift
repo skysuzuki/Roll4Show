@@ -30,13 +30,11 @@ class SearchMovieTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return movieController.movies.count
+        return movieController.getMovieCount()
     }
 
 
@@ -44,7 +42,7 @@ class SearchMovieTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
 
         // Configure the cell...
-        let movie = movieController.movies[indexPath.row]
+        let movie = movieController.getMovie(indexPath.row)
         cell.textLabel?.text = movie.title
 
         return cell
@@ -64,11 +62,6 @@ class SearchMovieTableViewController: UITableViewController {
 
 extension SearchMovieTableViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if !searchText.isEmpty {
             searchMovie(searchText)
-        } else {
-            movieController.movies.removeAll()
-            tableView.reloadData()
-        }
     }
 }
