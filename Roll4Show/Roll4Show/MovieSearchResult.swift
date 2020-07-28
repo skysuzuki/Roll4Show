@@ -11,9 +11,9 @@ import Foundation
 struct MovieSearchResult: Codable {
     let id: Int?
     let title: String?
+    let overview: String?
 }
 
 struct MovieResults: Codable {
-    let page: Int
     let results: [MovieSearchResult]
 }

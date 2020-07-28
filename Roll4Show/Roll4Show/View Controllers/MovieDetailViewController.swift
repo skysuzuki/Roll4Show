@@ -10,16 +10,21 @@ import UIKit
 
 class MovieDetailViewController: UIViewController {
 
-    @IBOutlet private weak var summaryTextView: UITextView!
+    @IBOutlet private weak var overviewTextView: UITextView!
+    @IBOutlet private weak var navTitle: UINavigationItem!
 
     var movie: MovieSearchResult?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateViews()
     }
 
     private func updateViews() {
         guard let movie = movie else { return }
-        self.title = movie.title
+        navTitle.title = movie.title
+        //self.navigationItem.title = movie.title
+        //self.navigationController?.title = movie.title
+        overviewTextView.text = movie.overview
     }
 }

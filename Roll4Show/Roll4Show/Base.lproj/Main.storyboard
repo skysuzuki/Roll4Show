@@ -66,10 +66,10 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-Hi-uo1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <items>
-                                    <navigationItem title="Title" id="wFH-8Y-Xyb"/>
+                                    <navigationItem title="Title" id="8Km-KB-PTz"/>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Summary goes here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GKH-F8-FJF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Overview goes here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GKH-F8-FJF">
                                 <rect key="frame" x="10" y="156" width="355" height="481"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -90,7 +90,8 @@
                         <viewLayoutGuide key="safeArea" id="V4k-LC-O5U"/>
                     </view>
                     <connections>
-                        <outlet property="summaryTextView" destination="GKH-F8-FJF" id="Eli-Ur-tXe"/>
+                        <outlet property="navTitle" destination="8Km-KB-PTz" id="2Ef-lp-SIj"/>
+                        <outlet property="overviewTextView" destination="GKH-F8-FJF" id="smn-cs-OkG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMc-Op-BrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

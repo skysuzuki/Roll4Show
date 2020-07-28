@@ -53,8 +53,12 @@ class SearchMovieTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // MovieDetailModalSegue
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "MovieDetailModalSegue" {
+            if let detailVC = segue.destination as? MovieDetailViewController,
+                let indexPath = tableView.indexPathForSelectedRow {
+                detailVC.movie = movieController.getMovie(indexPath.row)
+            }
+        }
     }
 }
 

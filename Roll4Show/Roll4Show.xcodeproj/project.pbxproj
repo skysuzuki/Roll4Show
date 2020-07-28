@@ -64,19 +64,51 @@
 		BB994B9424CF4D1F00158922 /* Roll4Show */ = {
 			isa = PBXGroup;
 			children = (
+				BB994BB324D0BB9300158922 /* View Controllers */,
+				BB994BB424D0BBB800158922 /* Model Controllers */,
+				BB994BB524D0BBCA00158922 /* Models */,
+				BB994BB624D0BBDB00158922 /* Networking */,
+				BB994B9B24CF4D1F00158922 /* Main.storyboard */,
 				BB994B9524CF4D1F00158922 /* AppDelegate.swift */,
 				BB994B9724CF4D1F00158922 /* SceneDelegate.swift */,
-				BB994BA924CF514200158922 /* SearchMovieTableViewController.swift */,
-				BB994BB124D0B97400158922 /* MovieDetailViewController.swift */,
-				BB994BAB24CF536200158922 /* MovieSearchResult.swift */,
-				BB994BAD24CF577F00158922 /* MovieNetworking.swift */,
-				BB994BAF24CF5EC600158922 /* MovieController.swift */,
-				BB994B9B24CF4D1F00158922 /* Main.storyboard */,
 				BB994B9E24CF4D2200158922 /* Assets.xcassets */,
 				BB994BA024CF4D2200158922 /* LaunchScreen.storyboard */,
 				BB994BA324CF4D2200158922 /* Info.plist */,
 			);
 			path = Roll4Show;
+			sourceTree = "<group>";
+		};
+		BB994BB324D0BB9300158922 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB994BA924CF514200158922 /* SearchMovieTableViewController.swift */,
+				BB994BB124D0B97400158922 /* MovieDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BB994BB424D0BBB800158922 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB994BAF24CF5EC600158922 /* MovieController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		BB994BB524D0BBCA00158922 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB994BAB24CF536200158922 /* MovieSearchResult.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BB994BB624D0BBDB00158922 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BB994BAD24CF577F00158922 /* MovieNetworking.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
