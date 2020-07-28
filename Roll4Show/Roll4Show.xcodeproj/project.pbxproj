@@ -16,6 +16,7 @@
 		BB994BAC24CF536200158922 /* MovieSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB994BAB24CF536200158922 /* MovieSearchResult.swift */; };
 		BB994BAE24CF577F00158922 /* MovieNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB994BAD24CF577F00158922 /* MovieNetworking.swift */; };
 		BB994BB024CF5EC600158922 /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB994BAF24CF5EC600158922 /* MovieController.swift */; };
+		BB994BB224D0B97400158922 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB994BB124D0B97400158922 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BB994BAB24CF536200158922 /* MovieSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchResult.swift; sourceTree = "<group>"; };
 		BB994BAD24CF577F00158922 /* MovieNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNetworking.swift; sourceTree = "<group>"; };
 		BB994BAF24CF5EC600158922 /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
+		BB994BB124D0B97400158922 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				BB994B9524CF4D1F00158922 /* AppDelegate.swift */,
 				BB994B9724CF4D1F00158922 /* SceneDelegate.swift */,
 				BB994BA924CF514200158922 /* SearchMovieTableViewController.swift */,
+				BB994BB124D0B97400158922 /* MovieDetailViewController.swift */,
 				BB994BAB24CF536200158922 /* MovieSearchResult.swift */,
 				BB994BAD24CF577F00158922 /* MovieNetworking.swift */,
 				BB994BAF24CF5EC600158922 /* MovieController.swift */,
@@ -151,6 +154,7 @@
 				BB994B9624CF4D1F00158922 /* AppDelegate.swift in Sources */,
 				BB994B9824CF4D1F00158922 /* SceneDelegate.swift in Sources */,
 				BB994BAA24CF514200158922 /* SearchMovieTableViewController.swift in Sources */,
+				BB994BB224D0B97400158922 /* MovieDetailViewController.swift in Sources */,
 				BB994BAE24CF577F00158922 /* MovieNetworking.swift in Sources */,
 				BB994BAC24CF536200158922 /* MovieSearchResult.swift in Sources */,
 			);

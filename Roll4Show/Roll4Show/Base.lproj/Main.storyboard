@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +37,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="uva-x0-UxX" kind="presentation" identifier="MovieDetailModalSegue" id="7Lv-bI-Thw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -50,6 +54,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M41-cc-pEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="129" y="103"/>
+        </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="mq7-FV-73u">
+            <objects>
+                <viewController id="uva-x0-UxX" customClass="MovieDetailViewController" customModule="Roll4Show" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ncx-Sx-N3y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBc-Hi-uo1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                <items>
+                                    <navigationItem title="Title" id="wFH-8Y-Xyb"/>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Summary goes here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GKH-F8-FJF">
+                                <rect key="frame" x="10" y="156" width="355" height="481"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tBc-Hi-uo1" firstAttribute="top" secondItem="V4k-LC-O5U" secondAttribute="top" id="AU9-KA-dep"/>
+                            <constraint firstItem="V4k-LC-O5U" firstAttribute="bottom" secondItem="GKH-F8-FJF" secondAttribute="bottom" constant="10" id="D38-RA-fyE"/>
+                            <constraint firstItem="V4k-LC-O5U" firstAttribute="trailing" secondItem="GKH-F8-FJF" secondAttribute="trailing" constant="10" id="R0F-q0-NAD"/>
+                            <constraint firstItem="tBc-Hi-uo1" firstAttribute="leading" secondItem="V4k-LC-O5U" secondAttribute="leading" id="bcu-Fa-JcR"/>
+                            <constraint firstItem="GKH-F8-FJF" firstAttribute="top" secondItem="tBc-Hi-uo1" secondAttribute="bottom" constant="100" id="g2J-ag-yij"/>
+                            <constraint firstItem="GKH-F8-FJF" firstAttribute="leading" secondItem="V4k-LC-O5U" secondAttribute="leading" constant="10" id="gOU-0b-XrO"/>
+                            <constraint firstItem="tBc-Hi-uo1" firstAttribute="trailing" secondItem="V4k-LC-O5U" secondAttribute="trailing" id="mcX-IA-TCb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V4k-LC-O5U"/>
+                    </view>
+                    <connections>
+                        <outlet property="summaryTextView" destination="GKH-F8-FJF" id="Eli-Ur-tXe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMc-Op-BrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="104"/>
         </scene>
     </scenes>
 </document>
