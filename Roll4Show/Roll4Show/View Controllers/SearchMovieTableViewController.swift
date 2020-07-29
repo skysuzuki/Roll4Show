@@ -57,6 +57,7 @@ class SearchMovieTableViewController: UITableViewController {
             if let detailVC = segue.destination as? MovieDetailViewController,
                 let indexPath = tableView.indexPathForSelectedRow {
                 detailVC.movie = movieController.getMovie(indexPath.row)
+                detailVC.movieController = self.movieController
             }
         }
     }

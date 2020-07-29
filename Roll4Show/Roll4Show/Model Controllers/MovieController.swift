@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class MovieController {
 
@@ -35,6 +36,14 @@ class MovieController {
         } else {
             self.movies.removeAll()
             completion()
+        }
+    }
+
+    func getMoviePoster(moviePosterPath: String, completion: @escaping (UIImage?) -> Void) {
+        movieNetwork.getMovieImages(moviePosterPath: moviePosterPath) { image in
+            if let image = image {
+                completion(image)
+            }
         }
     }
 }

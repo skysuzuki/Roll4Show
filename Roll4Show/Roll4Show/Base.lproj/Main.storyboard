@@ -70,20 +70,29 @@
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Overview goes here:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GKH-F8-FJF">
-                                <rect key="frame" x="10" y="156" width="355" height="481"/>
+                                <rect key="frame" x="10" y="244" width="355" height="393"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k49-Wt-neZ">
+                                <rect key="frame" x="67.5" y="66" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="EWp-E5-KvP"/>
+                                    <constraint firstAttribute="width" constant="240" id="HFn-Yo-t92"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="tBc-Hi-uo1" firstAttribute="top" secondItem="V4k-LC-O5U" secondAttribute="top" id="AU9-KA-dep"/>
                             <constraint firstItem="V4k-LC-O5U" firstAttribute="bottom" secondItem="GKH-F8-FJF" secondAttribute="bottom" constant="10" id="D38-RA-fyE"/>
+                            <constraint firstItem="k49-Wt-neZ" firstAttribute="top" secondItem="tBc-Hi-uo1" secondAttribute="bottom" constant="10" id="GcT-2g-JtH"/>
+                            <constraint firstItem="k49-Wt-neZ" firstAttribute="centerX" secondItem="ncx-Sx-N3y" secondAttribute="centerX" id="LJR-V4-WoQ"/>
                             <constraint firstItem="V4k-LC-O5U" firstAttribute="trailing" secondItem="GKH-F8-FJF" secondAttribute="trailing" constant="10" id="R0F-q0-NAD"/>
+                            <constraint firstItem="GKH-F8-FJF" firstAttribute="top" secondItem="k49-Wt-neZ" secondAttribute="bottom" constant="50" id="RBm-ZC-a6j"/>
                             <constraint firstItem="tBc-Hi-uo1" firstAttribute="leading" secondItem="V4k-LC-O5U" secondAttribute="leading" id="bcu-Fa-JcR"/>
-                            <constraint firstItem="GKH-F8-FJF" firstAttribute="top" secondItem="tBc-Hi-uo1" secondAttribute="bottom" constant="100" id="g2J-ag-yij"/>
                             <constraint firstItem="GKH-F8-FJF" firstAttribute="leading" secondItem="V4k-LC-O5U" secondAttribute="leading" constant="10" id="gOU-0b-XrO"/>
                             <constraint firstItem="tBc-Hi-uo1" firstAttribute="trailing" secondItem="V4k-LC-O5U" secondAttribute="trailing" id="mcX-IA-TCb"/>
                         </constraints>
@@ -92,11 +101,12 @@
                     <connections>
                         <outlet property="navTitle" destination="8Km-KB-PTz" id="2Ef-lp-SIj"/>
                         <outlet property="overviewTextView" destination="GKH-F8-FJF" id="smn-cs-OkG"/>
+                        <outlet property="posterImageView" destination="k49-Wt-neZ" id="RLz-Wb-5du"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMc-Op-BrP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898" y="104"/>
+            <point key="canvasLocation" x="896.79999999999995" y="103.89805097451276"/>
         </scene>
     </scenes>
 </document>

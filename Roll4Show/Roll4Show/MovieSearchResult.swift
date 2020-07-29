@@ -12,6 +12,19 @@ struct MovieSearchResult: Codable {
     let id: Int?
     let title: String?
     let overview: String?
+    let posterPath: String?
+}
+
+struct MovieImageResult: Codable {
+    let posters: [MoviePoster]
+
+    struct MoviePoster: Codable {
+        let filePath: String?
+
+        enum CodingKeys: String, CodingKey {
+            case filePath = "file_path"
+        }
+    }
 }
 
 struct MovieResults: Codable {
